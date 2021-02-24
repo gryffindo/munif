@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.nav {
+	display: flex;
+	padding: 10px 100px;
+	justify-content: space-between;
+	background-color: #7aaec4;
+}
+
+.name_arabic {
+	font-size: 30px;
+	color: #Ac2615;
+	cursor: pointer;
+	transition: .4s;
+}
+.name_arabic:hover {
+	color: #111;
+}
+.nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav ul li {
+	margin-right: 26px;
+}
+.nav ul li a {
+	color: #fff;
+	transition: .4s;
+}
+.nav ul li a:hover {
+	color: #212529;
+}
+.bars {
+	display: none;
+}
+.bars button {
+	padding: 10px 15px;
+	background-color: #7aaec4;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: .5s;
+}
+.bars button:focus {
+	outline: none;
+}
+.bars button:hover {
+	background-color: #fff;
+	border: 1px solid #111;
+}
+.bars button i {
+	font-size: 22px;
+}
+main {
+	padding: 0 100px;
+	margin-top: 7rem;
+	justify-content: space-around;
+}
+main h1 {
+	margin-bottom: 1rem;
+	font-size: 38px;
+	color: #333;
+}
+main p {
+	font-size: 18px;
+	font-weight: 500;
+}
+.about p {
+	max-width: 700px;
+}
+.contact {
+	position: fixed;
+	left: 0;
+	bottom: 50px;
+	background: #383838;
+	width: 100%;
+	padding: 40px 150px;
+	border-top: 4px solid #Ac2615;
+}
+.contact h2 {
+	color: #fff;
+	margin-bottom: 20px;
+}
+.contact ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.contact ul li {
+	margin-left: 25px;
+}
+.contact ul li a {
+	color: #fff;
+	transition: .4s;
+}
+.contact ul li a:hover {
+	color: #4981b3;
+}
+footer {
+	padding: 1rem 2rem 1rem;
+	position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #222222;
+	border-top: 5px solid #4981b3;
+  color: white;
+  text-align: center;
+	align-content: center;
+}
+footer a {
+	margin-left: 5px;
+	color: #fff;
+}
+@media only screen and (max-width: 767.9px) {
+	.nav ul {
+		display: none;
+	}
+	.bars {
+		display: block;
+	}
+}
